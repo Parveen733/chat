@@ -154,8 +154,9 @@ public class ChatView extends VerticalLayout {
 				}
 
 			});
-
+			
 			if(list2.get(0).contains("http")) {
+				System.out.println(list2.get(0));
 				ui.access(() -> messageList.addMessages("Alice", new Avataaar("Alice2"), list2.get(0), false));
 			}else {
 				ui.access(() -> messageList.addMessage("Alice", new Avataaar("Alice2"), list2.get(0), false));
